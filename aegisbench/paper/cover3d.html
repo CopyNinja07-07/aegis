@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; width: 1120px; height: 560px; overflow: hidden; background: #10161b; }
+  canvas { position: absolute; left: 0; top: 0; }
+  .copy { position: absolute; left: 64px; top: 0; height: 560px; width: 470px; display: flex; flex-direction: column; justify-content: center; font-family: Manrope, sans-serif; color: #eef2ef; }
+  h1 { margin: 0 0 18px; font-size: 64px; font-weight: 800; line-height: 1; }
+  p { margin: 0; font-size: 25px; font-weight: 500; line-height: 1.35; color: #b9c6c0; }
+  .meta { margin-top: 34px; font-size: 17px; font-weight: 700; color: #d9a54a; }
+  .tag { position: absolute; transform: translate(-50%, -100%); font-family: Manrope, sans-serif; font-size: 15px; font-weight: 700; color: #eef2ef; background: rgba(16,22,27,0.78); padding: 4px 10px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<div class="copy">
+  <h1>OODA-Aegis</h1>
+  <p>Exploit-grounded program repair with Gemma 4, checked by a solver and verified by the attack itself</p>
+  <div class="meta">Code graph, Z3 and an agent-built gate</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const W = 1120, H = 560;
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(W, H);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.insertBefore(renderer.domElement, document.body.firstChild);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x10161b);
+const camera = new THREE.PerspectiveCamera(30, W / H, 0.1, 100);
+camera.position.set(-1.4, 7.2, 12.5);
+camera.lookAt(3.2, 0.6, 0);
+camera.setViewOffset(W, H, -150, 0, W, H);
+
+// lights
+scene.add(new THREE.HemisphereLight(0xdfe9e4, 0x0b0f12, 0.55));
+const key = new THREE.DirectionalLight(0xffffff, 1.35);
+key.position.set(-4, 10, 7);
+key.castShadow = true;
+key.shadow.mapSize.set(2048, 2048);
+key.shadow.camera.left = -10; key.shadow.camera.right = 12;
+key.shadow.camera.top = 10; key.shadow.camera.bottom = -10;
+key.shadow.radius = 6; key.shadow.bias = -0.0004;
+scene.add(key);
+const rim = new THREE.DirectionalLight(0x9fd3c0, 0.65);
+rim.position.set(9, 4, -8);
+scene.add(rim);
+
+// floor
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(60, 60), new THREE.MeshStandardMaterial({ color: 0x10161b, roughness: 0.95 }));
+floor.rotation.x = -Math.PI / 2;
+floor.receiveShadow = true;
+scene.add(floor);
+
+const cx = 5.0, cz = 0.2;
+
+// rounded slab helper
+function slab(w, d, h, r, color, rough = 0.42, metal = 0.08) {
+  const s = new THREE.Shape();
+  s.moveTo(-w / 2 + r, -d / 2);
+  s.lineTo(w / 2 - r, -d / 2); s.quadraticCurveTo(w / 2, -d / 2, w / 2, -d / 2 + r);
+  s.lineTo(w / 2, d / 2 - r); s.quadraticCurveTo(w / 2, d / 2, w / 2 - r, d / 2);
+  s.lineTo(-w / 2 + r, d / 2); s.quadraticCurveTo(-w / 2, d / 2, -w / 2, d / 2 - r);
+  s.lineTo(-w / 2, -d / 2 + r); s.quadraticCurveTo(-w / 2, -d / 2, -w / 2 + r, -d / 2);
+  const g = new THREE.ExtrudeGeometry(s, { depth: h, bevelEnabled: true, bevelThickness: 0.06, bevelSize: 0.06, bevelSegments: 4, curveSegments: 12 });
+  g.rotateX(-Math.PI / 2);
+  const m = new THREE.Mesh(g, new THREE.MeshStandardMaterial({ color, roughness: rough, metalness: metal }));
+  m.castShadow = true; m.receiveShadow = true;
+  return m;
+}
+
+// loop ring (the OODA cycle)
+const R = 3.15;
+const ring = new THREE.Mesh(new THREE.TorusGeometry(R, 0.055, 16, 160), new THREE.MeshStandardMaterial({ color: 0x5f7a70, roughness: 0.5 }));
+ring.rotation.x = Math.PI / 2;
+ring.position.set(cx, 0.08, cz);
+ring.castShadow = true;
+scene.add(ring);
+
+// four stages: observe, orient, decide (model output, amber), act
+const stages = [
+  { a: Math.PI * 0.80, color: 0x3f8f6c, n: 'Observe' },
+  { a: Math.PI * 1.30, color: 0x3f8f6c, n: 'Orient' },
+  { a: Math.PI * 1.80, color: 0xd9a54a, n: 'Decide' },
+  { a: Math.PI * 0.30, color: 0x3f8f6c, n: 'Act' },
+];
+for (const st of stages) {
+  const b = slab(1.25, 0.8, 0.42, 0.18, st.color, 0.38, 0.05);
+  b.position.set(cx + R * Math.cos(st.a), 0.02, cz + R * Math.sin(st.a));
+  b.rotation.y = -st.a + Math.PI / 2;
+  scene.add(b);
+  st.pos = new THREE.Vector3(b.position.x, 0.75, b.position.z);
+}
+// small arrow heads along the ring
+for (let i = 0; i < 4; i++) {
+  const a = Math.PI * (0.55 + i * 0.5);
+  const cone = new THREE.Mesh(new THREE.ConeGeometry(0.13, 0.32, 24), new THREE.MeshStandardMaterial({ color: 0x8fb3a5, roughness: 0.45 }));
+  cone.position.set(cx + R * Math.cos(a), 0.12, cz + R * Math.sin(a));
+  cone.rotation.z = Math.PI / 2;
+  cone.rotation.y = -a;
+  cone.castShadow = true;
+  scene.add(cone);
+}
+
+// shield (Aegis) in the centre
+const sh = new THREE.Shape();
+sh.moveTo(0, 1.55);
+sh.bezierCurveTo(0.55, 1.35, 1.0, 1.32, 1.25, 1.25);
+sh.bezierCurveTo(1.28, 0.2, 0.95, -0.85, 0, -1.55);
+sh.bezierCurveTo(-0.95, -0.85, -1.28, 0.2, -1.25, 1.25);
+sh.bezierCurveTo(-1.0, 1.32, -0.55, 1.35, 0, 1.55);
+const shieldGeo = new THREE.ExtrudeGeometry(sh, { depth: 0.36, bevelEnabled: true, bevelThickness: 0.12, bevelSize: 0.1, bevelSegments: 8, curveSegments: 48 });
+shieldGeo.center();
+const shield = new THREE.Mesh(shieldGeo, new THREE.MeshStandardMaterial({ color: 0x2f7d5e, roughness: 0.3, metalness: 0.35 }));
+shield.position.set(cx, 1.85, cz);
+shield.rotation.y = -0.38;
+shield.castShadow = true;
+scene.add(shield);
+// inner check mark: the verified patch
+const ck = new THREE.Shape();
+ck.moveTo(-0.55, 0.05); ck.lineTo(-0.15, -0.38); ck.lineTo(0.62, 0.48); ck.lineTo(0.47, 0.62); ck.lineTo(-0.15, -0.08); ck.lineTo(-0.41, 0.2); ck.lineTo(-0.55, 0.05);
+const ckGeo = new THREE.ExtrudeGeometry(ck, { depth: 0.12, bevelEnabled: true, bevelThickness: 0.04, bevelSize: 0.04, bevelSegments: 3 });
+ckGeo.center();
+const check = new THREE.Mesh(ckGeo, new THREE.MeshStandardMaterial({ color: 0xeef2ef, roughness: 0.35, metalness: 0.1 }));
+check.position.set(0, 0.0, 0.3);
+shield.add(check);
+// pedestal under the shield
+const ped = new THREE.Mesh(new THREE.CylinderGeometry(1.05, 1.2, 0.22, 64), new THREE.MeshStandardMaterial({ color: 0x1c262d, roughness: 0.6 }));
+ped.position.set(cx, 0.11, cz);
+ped.castShadow = true; ped.receiveShadow = true;
+scene.add(ped);
+
+camera.updateMatrixWorld();
+for (const st of stages) {
+  const v = st.pos.clone().project(camera);
+  const el = document.createElement('div');
+  el.className = 'tag'; el.textContent = st.n;
+  el.style.left = ((v.x + 1) / 2 * W) + 'px'; el.style.top = ((1 - v.y) / 2 * H) + 'px';
+  document.body.appendChild(el);
+}
+renderer.render(scene, camera);
+document.fonts.ready.then(() => { renderer.render(scene, camera); document.title = "ready"; });
+</script>
+</body>
+</html>
