@@ -1,0 +1,7 @@
+z3-solver
+networkx
+fastapi==0.115.6
+httpx==0.28.1
+pytest
+pytest-timeout
+six  # real-CVE harness (urllib3 1.26.4 needs it)

@@ -1,0 +1,17 @@
+16 episodes (0 already done)
+[1/16] pt-docs          full           inj=None verified=True edge=True cands=1 53s
+[2/16] pt-templates     full           inj=None verified=True edge=True cands=2 133s
+[3/16] sqli-customers   full           inj=None verified=True edge=True cands=1 59s
+[4/16] sqli-notes       full           inj=None verified=True edge=True cands=1 124s
+[5/16] redos-email      full           inj=None verified=True edge=True cands=4 749s
+[6/16] redos-slug       full           inj=None verified=True edge=True cands=2 196s
+[7/16] cmdi-status      full           inj=None verified=True edge=False cands=1 54s
+[8/16] cmdi-archive     full           inj=None verified=True edge=False cands=2 222s
+[9/16] ssrf-preview     full           inj=None verified=True edge=True cands=1 46s
+[10/16] ssrf-asset       full           inj=None verified=True edge=True cands=2 113s
+[11/16] redirect-login   full           inj=None verified=True edge=True cands=1 68s
+[12/16] redirect-logout  full           inj=None verified=True edge=True cands=3 243s
+[13/16] idor-invoice     full           inj=None verified=False edge=False cands=4 241s
+[14/16] idor-files       full           inj=None verified=True edge=False cands=3 291s
+[15/16] deser-prefs      full           inj=None verified=True edge=True cands=2 128s
+[16/16] fmt-greet        full           inj=None verified=True edge=True cands=2 94s

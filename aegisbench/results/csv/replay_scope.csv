@@ -1,0 +1,530 @@
+task,class,trial,episode_any_pass,k,file,gate_ok,truncated,reason
+pt-docs,path_traversal,1,False,1,vault/core/storage.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20... be kind.\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+pt-docs,path_traversal,1,False,2,vault/core/storage.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20... be kind.\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+pt-docs,path_traversal,1,False,3,vault/core/storage.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20... be kind.\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+pt-docs,path_traversal,1,False,4,vault/core/storage.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20... be kind.\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+pt-templates,path_traversal,1,True,1,vault/core/templates.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...voice: Q3\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+pt-templates,path_traversal,1,True,2,vault/core/templates.py,True,False,ok
+pt-templates,path_traversal,1,True,3,vault/core/templates.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...voice: Q3\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+pt-templates,path_traversal,1,True,4,vault/core/templates.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...voice: Q3\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+sqli-customers,sql_injection,1,False,1,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-customers,sql_injection,1,False,2,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-customers,sql_injection,1,False,3,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-customers,sql_injection,1,False,4,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-notes,sql_injection,1,False,1,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-notes,sql_injection,1,False,2,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-notes,sql_injection,1,False,3,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-notes,sql_injection,1,False,4,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+redos-email,redos,1,True,1,vault/core/validate.py,True,False,ok
+redos-email,redos,1,True,2,vault/core/validate.py,True,False,ok
+redos-email,redos,1,True,3,vault/core/validate.py,True,False,ok
+redos-email,redos,1,True,4,vault/core/validate.py,True,False,ok
+redos-slug,redos,1,True,1,vault/core/validate.py,True,False,ok
+redos-slug,redos,1,True,2,vault/core/validate.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+redos-slug,redos,1,True,3,vault/core/validate.py,True,False,ok
+redos-slug,redos,1,True,4,vault/core/validate.py,True,False,ok
+cmdi-status,command_injection,1,True,1,vault/core/shell.py,True,False,ok
+cmdi-status,command_injection,1,True,2,vault/core/shell.py,True,False,ok
+cmdi-status,command_injection,1,True,3,vault/core/shell.py,True,False,ok
+cmdi-status,command_injection,1,True,4,vault/core/shell.py,True,False,ok
+cmdi-archive,command_injection,1,False,1,vault/core/archive.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...entries': []}} == {'status': 20..., 'jan.csv']}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'name': 'q3', 'entries'"
+cmdi-archive,command_injection,1,False,2,vault/core/archive.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20..., 'jan.csv']}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+cmdi-archive,command_injection,1,False,3,vault/core/archive.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20..., 'jan.csv']}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+cmdi-archive,command_injection,1,False,4,vault/core/archive.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20..., 'jan.csv']}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+ssrf-preview,ssrf,1,False,1,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Vault docs.'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+ssrf-preview,ssrf,1,False,2,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Vault docs.'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+ssrf-preview,ssrf,1,False,3,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Vault docs.'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+ssrf-preview,ssrf,1,False,4,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Vault docs.'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+ssrf-asset,ssrf,1,False,1,vault/core/fetch.py,False,False,"test_aegis_harness::test_attack_is_neutralised[visible-3]: AssertionError: request hung for more than 2.5s (denial of service)
+assert None is not None; test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40..."
+ssrf-asset,ssrf,1,False,2,vault/core/fetch.py,False,False,"test_aegis_harness::test_attack_is_neutralised[visible-3]: AssertionError: request hung for more than 2.5s (denial of service)
+assert None is not None; test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40..."
+ssrf-asset,ssrf,1,False,3,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...'VAULT-LOGO'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+ssrf-asset,ssrf,1,False,4,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...'VAULT-LOGO'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+redirect-login,open_redirect,1,False,1,vault/core/redirect.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-2]: AssertionError: legitimate response changed after the patch
+assert {'status': 30...', 'body': ''} == {'status': 30...', 'body': ''}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'location': '/home'} != {'locati"
+redirect-login,open_redirect,1,False,2,vault/core/redirect.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-2]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 30...', 'body': ''}
+  
+  Differing items:
+  {'body': {'error': 'bad request'}} != {'body': ''}
+  {'status': 400} != {'statu"
+redirect-login,open_redirect,1,False,3,vault/core/redirect.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-2]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 30...', 'body': ''}
+  
+  Differing items:
+  {'status': 400} != {'status': 302}
+  {'location': None} != {'location': 'https:"
+redirect-login,open_redirect,1,False,4,vault/core/redirect.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-2]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 30...', 'body': ''}
+  
+  Differing items:
+  {'location': None} != {'location': 'https://app.vault.example/settings'}
+  {'bo"
+redirect-logout,open_redirect,1,True,1,vault/core/redirect.py,True,False,ok
+redirect-logout,open_redirect,1,True,2,vault/core/redirect.py,True,False,ok
+redirect-logout,open_redirect,1,True,3,vault/core/redirect.py,True,False,ok
+redirect-logout,open_redirect,1,True,4,vault/core/redirect.py,True,False,ok
+idor-invoice,idor,1,False,1,vault/core/billing.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...us': 'paid'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+idor-invoice,idor,1,False,2,vault/core/billing.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...us': 'paid'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+idor-invoice,idor,1,False,3,vault/core/billing.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...us': 'paid'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+idor-invoice,idor,1,False,4,vault/core/billing.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...us': 'paid'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+idor-files,idor,1,False,1,vault/core/files.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...'CONTENT-A'}}} == {'status': 20...ant a plan'}}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'file': {'id': 'f-1', '"
+idor-files,idor,1,False,2,vault/core/files.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...'content-a'}}} == {'status': 20...ant a plan'}}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'file': {'id': 'f-1', '"
+idor-files,idor,1,False,3,vault/core/files.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...'CONTENT-A'}}} == {'status': 20...ant a plan'}}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'file': {'id': 'f-1', '"
+idor-files,idor,1,False,4,vault/core/files.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+deser-prefs,unsafe_deserialization,1,False,1,vault/core/prefs.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...lang': 'en'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+deser-prefs,unsafe_deserialization,1,False,2,vault/core/prefs.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...lang': 'en'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+deser-prefs,unsafe_deserialization,1,False,3,vault/core/prefs.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...lang': 'en'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+deser-prefs,unsafe_deserialization,1,False,4,vault/core/prefs.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...lang': 'en'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+fmt-greet,format_string_injection,1,False,1,vault/core/greet.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'banner': 'Hello {user."
+fmt-greet,format_string_injection,1,False,2,vault/core/greet.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Hello Asha!'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+fmt-greet,format_string_injection,1,False,3,vault/core/greet.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'banner': 'Hello {user."
+fmt-greet,format_string_injection,1,False,4,vault/core/greet.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...name}! Asha'}} == {'status': 20...Hello Asha!'}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'banner': 'Hello {user."
+pt-docs,path_traversal,2,False,1,vault/core/storage.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20... be kind.\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+pt-docs,path_traversal,2,False,2,vault/core/storage.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20... be kind.\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+pt-docs,path_traversal,2,False,3,vault/core/storage.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20... be kind.\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+pt-docs,path_traversal,2,False,4,vault/core/storage.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20... be kind.\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+sqli-customers,sql_injection,2,False,1,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-customers,sql_injection,2,False,2,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-customers,sql_injection,2,False,3,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-customers,sql_injection,2,False,4,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+pt-templates,path_traversal,2,True,1,vault/core/templates.py,True,False,ok
+pt-templates,path_traversal,2,True,2,vault/core/templates.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...voice: Q3\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+pt-templates,path_traversal,2,True,3,vault/core/templates.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...voice: Q3\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+pt-templates,path_traversal,2,True,4,vault/core/templates.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...voice: Q3\n'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+redos-email,redos,2,True,1,vault/core/validate.py,True,False,ok
+redos-email,redos,2,True,2,vault/core/validate.py,True,False,ok
+redos-email,redos,2,True,3,vault/core/validate.py,True,False,ok
+redos-email,redos,2,True,4,vault/core/validate.py,True,False,ok
+sqli-notes,sql_injection,2,False,1,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-notes,sql_injection,2,False,2,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-notes,sql_injection,2,False,3,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+sqli-notes,sql_injection,2,False,4,vault/core/db.py,False,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutra"
+cmdi-status,command_injection,2,True,1,vault/core/shell.py,True,False,ok
+cmdi-status,command_injection,2,True,2,vault/core/shell.py,True,False,ok
+cmdi-status,command_injection,2,True,3,vault/core/shell.py,True,False,ok
+cmdi-status,command_injection,2,True,4,vault/core/shell.py,True,False,ok
+redos-slug,redos,2,True,1,vault/core/validate.py,True,False,ok
+redos-slug,redos,2,True,2,vault/core/validate.py,True,False,ok
+redos-slug,redos,2,True,3,vault/core/validate.py,True,False,ok
+redos-slug,redos,2,True,4,vault/core/validate.py,True,False,ok
+ssrf-preview,ssrf,2,False,1,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Vault docs.'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+ssrf-preview,ssrf,2,False,2,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Vault docs.'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+ssrf-preview,ssrf,2,False,3,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Vault docs.'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+ssrf-preview,ssrf,2,False,4,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Vault docs.'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+redirect-login,open_redirect,2,False,1,vault/core/redirect.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-2]: AssertionError: legitimate response changed after the patch
+assert {'status': 30...', 'body': ''} == {'status': 30...', 'body': ''}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'location': '/home'} != {'locati"
+redirect-login,open_redirect,2,False,2,vault/core/redirect.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-2]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 30...', 'body': ''}
+  
+  Differing items:
+  {'status': 400} != {'status': 302}
+  {'body': {'error': 'bad request'}} != {'bo"
+redirect-login,open_redirect,2,False,3,vault/core/redirect.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-2]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 30...', 'body': ''}
+  
+  Differing items:
+  {'location': None} != {'location': 'https://app.vault.example/settings'}
+  {'bo"
+redirect-login,open_redirect,2,False,4,vault/core/redirect.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-2]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 30...', 'body': ''}
+  
+  Differing items:
+  {'status': 400} != {'status': 302}
+  {'body': {'error': 'bad request'}} != {'bo"
+cmdi-archive,command_injection,2,False,1,vault/core/archive.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...entries': []}} == {'status': 20..., 'jan.csv']}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'name': 'q3', 'entries'"
+cmdi-archive,command_injection,2,False,2,vault/core/archive.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20..., 'jan.csv']}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+cmdi-archive,command_injection,2,False,3,vault/core/archive.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20..., 'jan.csv']}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+cmdi-archive,command_injection,2,False,4,vault/core/archive.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...entries': []}} == {'status': 20..., 'jan.csv']}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'name': 'q3', 'entries'"
+idor-invoice,idor,2,False,1,vault/core/billing.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...us': 'paid'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+idor-invoice,idor,2,False,2,vault/core/billing.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...us': 'paid'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+idor-invoice,idor,2,False,3,vault/core/billing.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...us': 'paid'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 404} != {'status': 200"
+idor-invoice,idor,2,False,4,vault/core/billing.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40... 'not found'}} == {'status': 20...us': 'paid'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'not found'}} "
+ssrf-asset,ssrf,2,False,1,vault/core/fetch.py,False,False,"test_aegis_harness::test_attack_is_neutralised[visible-3]: AssertionError: request hung for more than 2.5s (denial of service)
+assert None is not None; test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40..."
+ssrf-asset,ssrf,2,False,2,vault/core/fetch.py,False,False,"test_aegis_harness::test_attack_is_neutralised[visible-3]: AssertionError: request hung for more than 2.5s (denial of service)
+assert None is not None; test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40..."
+ssrf-asset,ssrf,2,False,3,vault/core/fetch.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...'VAULT-LOGO'}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+ssrf-asset,ssrf,2,False,4,vault/core/fetch.py,False,False,"test_aegis_harness::test_attack_is_neutralised[visible-3]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 50...Server Error'} == {'st"
+deser-prefs,unsafe_deserialization,2,False,1,vault/core/prefs.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...lang': 'en'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'body': {'error': 'bad request'}"
+deser-prefs,unsafe_deserialization,2,False,2,vault/core/prefs.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...lang': 'en'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+deser-prefs,unsafe_deserialization,2,False,3,vault/core/prefs.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...lang': 'en'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+deser-prefs,unsafe_deserialization,2,False,4,vault/core/prefs.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...lang': 'en'}}}
+  
+  Omitting 1 identical items, use -vv to show
+  Differing items:
+  {'status': 400} != {'status': 200"
+redirect-logout,open_redirect,2,True,1,vault/core/redirect.py,True,False,ok
+redirect-logout,open_redirect,2,True,2,vault/core/redirect.py,True,False,ok
+redirect-logout,open_redirect,2,True,3,vault/core/redirect.py,True,False,ok
+redirect-logout,open_redirect,2,True,4,vault/core/redirect.py,True,False,ok
+idor-files,idor,2,False,1,vault/core/files.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...o tenant-a'}}} == {'status': 20...ant a plan'}}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'file': {'id': 'f-1', '"
+idor-files,idor,2,False,2,vault/core/files.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20... 'PDF-DATA'}}} == {'status': 20...ant a plan'}}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'file': {'id': 'f-1', '"
+idor-files,idor,2,False,3,vault/core/files.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...': 'data-a'}}} == {'status': 20...ant a plan'}}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'file': {'id': 'f-1', '"
+idor-files,idor,2,False,4,vault/core/files.py,False,False,::test_aegis_harness: collection failure; ::tests.test_service: collection failure
+fmt-greet,format_string_injection,2,False,1,vault/core/greet.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'banner': 'Hello {user."
+fmt-greet,format_string_injection,2,False,2,vault/core/greet.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'banner': 'Hello {user."
+fmt-greet,format_string_injection,2,False,3,vault/core/greet.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...name}! Asha'}} == {'status': 20...Hello Asha!'}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'banner': 'Hello {user."
+fmt-greet,format_string_injection,2,False,4,vault/core/greet.py,False,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+  Omitting 2 identical items, use -vv to show
+  Differing items:
+  {'body': {'banner': 'Hello {user."

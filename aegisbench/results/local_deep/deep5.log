@@ -1,0 +1,34 @@
+16 episodes (0 already done)
+[1/16] pt-docs          graph_slice    inj=None verified=True edge=True cands=1 99s
+[2/16] pt-templates     graph_slice    inj=None verified=True edge=True cands=1 75s
+[3/16] sqli-customers   graph_slice    inj=None verified=True edge=True cands=1 66s
+[4/16] sqli-notes       graph_slice    inj=None verified=True edge=True cands=1 87s
+[5/16] redos-email      graph_slice    inj=None verified=True edge=True cands=2 188s
+[6/16] redos-slug       graph_slice    inj=None verified=True edge=True cands=1 122s
+[7/16] cmdi-status      graph_slice    inj=None verified=True edge=False cands=1 76s
+[8/16] cmdi-archive     graph_slice    inj=None verified=True edge=False cands=4 312s
+[9/16] ssrf-preview     graph_slice    inj=None verified=True edge=True cands=1 47s
+[10/16] ssrf-asset       graph_slice    inj=None verified=True edge=True cands=1 166s
+[11/16] redirect-login   graph_slice    inj=None verified=True edge=True cands=1 61s
+[12/16] redirect-logout  graph_slice    inj=None verified=True edge=True cands=2 113s
+[13/16] idor-invoice     graph_slice    inj=None verified=False edge=False cands=4 266s
+[14/16] idor-files       graph_slice    inj=None verified=False edge=False cands=4 318s
+[15/16] deser-prefs      graph_slice    inj=None verified=True edge=True cands=1 56s
+[16/16] fmt-greet        graph_slice    inj=None verified=True edge=True cands=1 68s
+16 episodes (16 already done)
+[1/16] pt-docs          no_graph_flat  inj=None verified=True edge=True cands=3 298s
+[2/16] pt-templates     no_graph_flat  inj=None verified=True edge=True cands=4 537s
+[3/16] sqli-customers   no_graph_flat  inj=None verified=True edge=True cands=2 257s
+[4/16] sqli-notes       no_graph_flat  inj=None verified=True edge=True cands=2 203s
+[5/16] redos-email      no_graph_flat  inj=None verified=False edge=True cands=4 226s
+[6/16] redos-slug       no_graph_flat  inj=None verified=False edge=True cands=4 308s
+[7/16] cmdi-status      no_graph_flat  inj=None verified=True edge=False cands=2 119s
+[8/16] cmdi-archive     no_graph_flat  inj=None verified=True edge=False cands=3 239s
+[9/16] ssrf-preview     no_graph_flat  inj=None verified=False edge=True cands=4 206s
+[10/16] ssrf-asset       no_graph_flat  inj=None verified=False edge=True cands=4 461s
+[11/16] redirect-login   no_graph_flat  inj=None verified=False edge=True cands=4 333s
+[12/16] redirect-logout  no_graph_flat  inj=None verified=True edge=True cands=3 141s
+[13/16] idor-invoice     no_graph_flat  inj=None verified=False edge=False cands=4 298s
+[14/16] idor-files       no_graph_flat  inj=None verified=False edge=False cands=4 368s
+[15/16] deser-prefs      no_graph_flat  inj=None verified=False edge=True cands=4 386s
+[16/16] fmt-greet        no_graph_flat  inj=None verified=True edge=True cands=1 61s

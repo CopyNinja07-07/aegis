@@ -1,0 +1,336 @@
+{
+ "requests-proxy-auth": {
+  "vulnerable": {
+   "rc": 1,
+   "tests": 258,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 16,
+   "skipped": 12,
+   "failing": [
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://172.16.1.1/-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://172.16.1.1:5000/-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@172.16.1.1-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@172.16.1.1:5000-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://hostname/-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://hostname:5000/-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@hostname-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@hostname:5000-hostname]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[http_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[https_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTP_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTPS_PROXY-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-https]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "tests": 258,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 16,
+   "skipped": 12,
+   "failing": [
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://172.16.1.1/-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://172.16.1.1:5000/-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@172.16.1.1-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@172.16.1.1:5000-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://hostname/-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://hostname:5000/-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@hostname-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@hostname:5000-hostname]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[http_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[https_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTP_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTPS_PROXY-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-https]"
+   ]
+  }
+ },
+ "urllib3-authority-redos": {
+  "vulnerable": {
+   "rc": 0,
+   "tests": 262,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 4,
+   "failing": []
+  },
+  "fixed": {
+   "rc": 0,
+   "tests": 264,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 4,
+   "failing": []
+  }
+ },
+ "requests+urllib3-redos": {
+  "vulnerable": {
+   "rc": 1,
+   "tests": 235,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 16,
+   "skipped": 12,
+   "failing": [
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://172.16.1.1/-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://172.16.1.1:5000/-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@172.16.1.1-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@172.16.1.1:5000-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://hostname/-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://hostname:5000/-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@hostname-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@hostname:5000-hostname]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[http_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[https_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTP_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTPS_PROXY-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-https]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "tests": 235,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 16,
+   "skipped": 12,
+   "failing": [
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://172.16.1.1/-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://172.16.1.1:5000/-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@172.16.1.1-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@172.16.1.1:5000-172.16.1.1]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://hostname/-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://hostname:5000/-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@hostname-hostname]",
+    "tests.test_utils::test_should_bypass_proxies_pass_only_hostname[http://user:pass@hostname:5000-hostname]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[http_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[https_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTP_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTPS_PROXY-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-https]"
+   ]
+  }
+ },
+ "waitress-chunked-smuggling": {
+  "vulnerable": {
+   "rc": 0,
+   "tests": 111,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  },
+  "fixed": {
+   "rc": 0,
+   "tests": 126,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  }
+ },
+ "requests-auth-redirect": {
+  "vulnerable": {
+   "rc": 1,
+   "tests": 38,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 8,
+   "skipped": 0,
+   "failing": [
+    "tests.test_lowlevel::test_use_proxy_from_environment[http_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[https_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTP_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTPS_PROXY-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-https]"
+   ]
+  },
+  "fixed": {
+   "rc": 1,
+   "tests": 38,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 8,
+   "skipped": 0,
+   "failing": [
+    "tests.test_lowlevel::test_use_proxy_from_environment[http_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[https_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[all_proxy-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTP_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[HTTPS_PROXY-https]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-http]",
+    "tests.test_lowlevel::test_use_proxy_from_environment[ALL_PROXY-https]"
+   ]
+  }
+ },
+ "pyyaml-full-load": {
+  "vulnerable": {
+   "tests": 1283,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "ok": true
+  },
+  "fixed": {
+   "tests": 1288,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "ok": true
+  }
+ },
+ "jinja2-sandbox-format": {
+  "vulnerable": {
+   "rc": 0,
+   "tests": 12,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  },
+  "fixed": {
+   "rc": 0,
+   "tests": 15,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  }
+ },
+ "sqlparse-strip-comments": {
+  "vulnerable": {
+   "rc": 0,
+   "tests": 142,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 3,
+   "failing": []
+  },
+  "fixed": {
+   "rc": 0,
+   "tests": 144,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 3,
+   "failing": []
+  }
+ },
+ "idna-encode-quadratic": {
+  "vulnerable": {
+   "rc": 0,
+   "tests": 19,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  },
+  "fixed": {
+   "rc": 0,
+   "tests": 19,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  }
+ },
+ "multipart-options-redos": {
+  "vulnerable": {
+   "rc": 0,
+   "tests": 105,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  },
+  "fixed": {
+   "rc": 0,
+   "tests": 105,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  }
+ },
+ "aiohttp-static-traversal": {
+  "vulnerable": {
+   "rc": 0,
+   "tests": 30,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 3,
+   "failing": []
+  },
+  "fixed": {
+   "rc": 0,
+   "tests": 32,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 3,
+   "failing": []
+  }
+ },
+ "werkzeug-multipart-dos": {
+  "vulnerable": {
+   "rc": 0,
+   "tests": 24,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  },
+  "fixed": {
+   "rc": 0,
+   "tests": 24,
+   "failed": 0,
+   "errors": 0,
+   "missing_fixture": 0,
+   "skipped": 0,
+   "failing": []
+  }
+ },
+ "django-email-redos": {
+  "vulnerable": {
+   "tests": 28,
+   "failed_summary": "",
+   "exit": 0
+  },
+  "fixed": {
+   "tests": 28,
+   "failed_summary": "",
+   "exit": 0
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{"task": "idor-files", "config": "full", "trial": 1, "repair_model": "gemma4:e4b", "verified": true, "candidates": [{"k": 1, "pattern": false}, {"k": 2, "pattern": false}]}
+{"task": "pt-docs", "config": "full", "trial": 1, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "redos-email", "config": "full", "trial": 1, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "ssrf-asset", "config": "full", "trial": 1, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "ssrf-preview", "config": "full", "trial": 1, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "redirect-logout", "config": "full", "trial": 1, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "redirect-login", "config": "full", "trial": 1, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "fmt-greet", "config": "full", "trial": 1, "repair_model": "gemma4:12b", "verified": false, "candidates": [{"k": 1, "pattern": false}, {"k": 2, "pattern": false}, {"k": 3, "pattern": false}]}
+{"task": "pt-docs", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "sqli-notes", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}, {"k": 2, "pattern": false}]}
+{"task": "redos-slug", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "redos-email", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "cmdi-archive", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}, {"k": 2, "pattern": false}]}
+{"task": "ssrf-asset", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "redirect-login", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "redirect-logout", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": true, "candidates": [{"k": 1, "pattern": false}]}
+{"task": "fmt-greet", "config": "full", "trial": 2, "repair_model": "gemma4:12b", "verified": false, "candidates": [{"k": 1, "pattern": false}, {"k": 2, "pattern": false}, {"k": 4, "pattern": false}]}
+{"task": "cmdi-archive", "config": "full", "trial": 1, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}, {"k": 2, "pattern": false}]}
+{"task": "ssrf-preview", "config": "full", "trial": 1, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}]}
+{"task": "redirect-login", "config": "full", "trial": 1, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}, {"k": 2, "pattern": true, "gate_ok": true, "reason": "ok"}]}
+{"task": "redirect-logout", "config": "full", "trial": 1, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}]}
+{"task": "redos-email", "config": "full", "trial": 2, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}]}
+{"task": "cmdi-archive", "config": "full", "trial": 2, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}]}
+{"task": "ssrf-preview", "config": "full", "trial": 2, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}]}
+{"task": "redirect-login", "config": "full", "trial": 2, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}]}
+{"task": "redirect-logout", "config": "full", "trial": 2, "repair_model": "gemma4:31b", "verified": true, "candidates": [{"k": 1, "pattern": true, "gate_ok": true, "reason": "ok"}]}
+{"task": "fmt-greet", "config": "full", "trial": 2, "repair_model": "gemma4:31b", "verified": false, "candidates": [{"k": 2, "pattern": true, "gate_ok": false, "reason": "test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error\nassert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionErr"}]}

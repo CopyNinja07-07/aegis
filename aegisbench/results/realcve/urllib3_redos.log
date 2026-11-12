@@ -1,0 +1,5 @@
+trial 1: verified=False cands=4 context=['urllib3/connection.py', 'urllib3/util/url.py', 'urllib3/exceptions.py'] (5.0%) exploit 2.528 s
+trial 2: verified=True cands=1 context=['urllib3/connection.py', 'urllib3/util/url.py', 'urllib3/exceptions.py'] (5.0%) exploit 2.754 s
+trial 3: verified=True cands=1 context=['urllib3/connection.py', 'urllib3/util/url.py', 'urllib3/exceptions.py'] (5.0%) exploit 2.672 s
+trial 4: verified=False cands=4 context=['urllib3/connection.py', 'urllib3/util/url.py', 'urllib3/exceptions.py'] (5.0%) exploit 2.598 s
+trial 5: verified=False cands=4 context=['urllib3/connection.py', 'urllib3/util/url.py', 'urllib3/exceptions.py'] (5.0%) exploit 2.694 s

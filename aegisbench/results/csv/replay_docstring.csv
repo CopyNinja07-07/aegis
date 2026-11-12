@@ -1,0 +1,197 @@
+run,task,config,trial,repair_model,episode_verified,k,pattern,gate_ok,reason
+main,pt-templates,full,1,gemma4:26b,True,1,True,True,ok
+main,redos-email,full,1,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,full,1,gemma4:26b,True,1,True,True,ok
+main,redirect-login,full,1,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,full,1,gemma4:26b,True,1,True,True,ok
+main,idor-files,full,1,gemma4:26b,True,1,True,True,ok
+main,pt-docs,no_tot,1,gemma4:26b,False,1,False,,
+main,fmt-greet,full,1,gemma4:26b,False,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,full,1,gemma4:26b,False,3,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 50...Server Error'} == {'status': 20...Hello Asha!'}}
+  
+"
+main,pt-templates,no_tot,1,gemma4:26b,False,1,True,True,ok
+main,redos-email,no_tot,1,gemma4:26b,False,1,True,True,ok
+main,redos-slug,no_tot,1,gemma4:26b,False,1,True,True,ok
+main,cmdi-archive,no_tot,1,gemma4:26b,False,1,True,True,ok
+main,ssrf-asset,no_tot,1,gemma4:26b,False,1,True,True,ok
+main,idor-invoice,no_tot,1,gemma4:26b,False,1,True,True,ok
+main,fmt-greet,no_tot,1,gemma4:26b,False,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,redos-slug,no_graph_flat,1,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,no_graph_flat,1,gemma4:26b,True,1,True,True,ok
+main,fmt-greet,no_graph_flat,1,gemma4:26b,False,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,no_graph_flat,1,gemma4:26b,False,2,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,no_graph_flat,1,gemma4:26b,False,3,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,no_graph_flat,1,gemma4:26b,False,4,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,pt-templates,no_evidence,1,gemma4:26b,True,1,True,True,ok
+main,redos-email,no_evidence,1,gemma4:26b,True,1,True,True,ok
+main,redos-slug,no_evidence,1,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,no_evidence,1,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,no_evidence,1,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,no_evidence,1,gemma4:26b,True,2,True,True,ok
+main,ssrf-asset,no_evidence,1,gemma4:26b,True,1,True,True,ok
+main,idor-files,no_evidence,1,gemma4:26b,True,1,True,True,ok
+main,pt-docs,no_guard,1,gemma4:26b,False,1,True,True,ok
+main,pt-docs,no_guard,1,gemma4:26b,False,3,True,True,ok
+main,fmt-greet,no_evidence,1,gemma4:26b,False,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,no_evidence,1,gemma4:26b,False,3,True,True,ok
+main,pt-templates,no_guard,1,gemma4:26b,True,1,True,True,ok
+main,redos-email,no_guard,1,gemma4:26b,True,1,True,True,ok
+main,redos-slug,no_guard,1,gemma4:26b,True,1,True,True,ok
+main,redirect-login,no_guard,1,gemma4:26b,False,3,True,True,ok
+main,cmdi-archive,no_guard,1,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,no_guard,1,gemma4:26b,True,2,True,True,ok
+main,idor-invoice,no_guard,1,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,no_guard,1,gemma4:26b,True,2,True,True,ok
+main,ssrf-asset,no_guard,1,gemma4:26b,True,1,True,True,ok
+main,pt-docs,full,2,gemma4:26b,True,1,True,True,ok
+main,idor-files,no_guard,1,gemma4:26b,True,1,True,True,ok
+main,fmt-greet,no_guard,1,gemma4:26b,False,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,no_guard,1,gemma4:26b,False,2,False,,
+main,fmt-greet,no_guard,1,gemma4:26b,False,3,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,pt-templates,full,2,gemma4:26b,True,1,True,True,ok
+main,redos-email,full,2,gemma4:26b,True,1,True,True,ok
+main,redos-email,full,2,gemma4:26b,True,2,False,,
+main,redos-email,full,2,gemma4:26b,True,3,True,True,ok
+main,ssrf-preview,full,2,gemma4:26b,True,1,True,True,ok
+main,redos-slug,full,2,gemma4:26b,True,1,True,True,ok
+main,redirect-login,full,2,gemma4:26b,False,1,True,True,ok
+main,redirect-login,full,2,gemma4:26b,False,3,True,True,ok
+main,cmdi-archive,full,2,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,full,2,gemma4:26b,True,1,True,True,ok
+main,idor-files,full,2,gemma4:26b,True,1,True,True,ok
+main,pt-docs,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,fmt-greet,full,2,gemma4:26b,False,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,full,2,gemma4:26b,False,3,True,True,ok
+main,redos-email,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,pt-templates,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,idor-invoice,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,redos-slug,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,cmdi-archive,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,ssrf-asset,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,idor-files,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,fmt-greet,no_tot,2,gemma4:26b,False,1,True,True,ok
+main,redos-email,no_graph_flat,2,gemma4:26b,True,1,True,True,ok
+main,redos-slug,no_graph_flat,2,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,no_graph_flat,2,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,no_graph_flat,2,gemma4:26b,True,2,True,True,ok
+main,fmt-greet,no_graph_flat,2,gemma4:26b,False,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,no_graph_flat,2,gemma4:26b,False,3,True,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionErr"
+main,fmt-greet,no_graph_flat,2,gemma4:26b,False,4,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 40...bad request'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,pt-templates,no_evidence,2,gemma4:26b,True,1,True,True,ok
+main,redos-email,no_evidence,2,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,no_evidence,2,gemma4:26b,True,1,True,True,ok
+main,redos-slug,no_evidence,2,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,no_evidence,2,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,no_evidence,2,gemma4:26b,True,2,True,True,ok
+main,pt-docs,no_guard,2,gemma4:26b,True,1,False,,
+main,ssrf-asset,no_evidence,2,gemma4:26b,True,1,True,True,ok
+main,idor-files,no_evidence,2,gemma4:26b,True,1,True,True,ok
+main,redos-email,no_guard,2,gemma4:26b,True,1,True,True,ok
+main,fmt-greet,no_evidence,2,gemma4:26b,False,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,fmt-greet,no_evidence,2,gemma4:26b,False,3,True,True,ok
+main,pt-templates,no_guard,2,gemma4:26b,True,1,True,True,ok
+main,pt-templates,no_guard,2,gemma4:26b,True,3,True,True,ok
+main,idor-invoice,no_guard,2,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,no_guard,2,gemma4:26b,True,2,True,True,ok
+main,idor-invoice,no_guard,2,gemma4:26b,True,3,True,True,ok
+main,redos-slug,no_guard,2,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,no_guard,2,gemma4:26b,False,1,True,True,ok
+main,cmdi-archive,no_guard,2,gemma4:26b,False,2,True,True,ok
+main,cmdi-archive,no_guard,2,gemma4:26b,False,4,True,True,ok
+main,idor-files,no_guard,2,gemma4:26b,True,1,True,True,ok
+main,fmt-greet,no_guard,2,gemma4:26b,False,1,True,True,ok
+main,fmt-greet,no_guard,2,gemma4:26b,False,2,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+main,pt-templates,full,3,gemma4:26b,True,1,True,True,ok
+main,redos-email,full,3,gemma4:26b,True,1,True,True,ok
+main,redos-slug,full,3,gemma4:26b,True,1,True,True,ok
+main,cmdi-archive,full,3,gemma4:26b,True,1,True,True,ok
+main,ssrf-asset,full,3,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,full,3,gemma4:26b,True,1,True,True,ok
+main,idor-invoice,full,3,gemma4:26b,True,2,True,True,ok
+main,idor-files,full,3,gemma4:26b,True,1,True,True,ok
+main,fmt-greet,full,3,gemma4:26b,True,1,True,False,"test_aegis_harness::test_legitimate_traffic_unchanged[benign-1]: AssertionError: legitimate response changed after the patch
+assert {'status': 20...user.name}!'}} == {'status': 20...Hello Asha!'}}
+  
+"
+sizes,idor-files,full,1,gemma4:e4b,True,1,False,,
+sizes,idor-files,full,1,gemma4:e4b,True,2,False,,
+sizes,pt-docs,full,1,gemma4:12b,True,1,False,,
+sizes,redos-email,full,1,gemma4:12b,True,1,False,,
+sizes,ssrf-asset,full,1,gemma4:12b,True,1,False,,
+sizes,ssrf-preview,full,1,gemma4:12b,True,1,False,,
+sizes,redirect-logout,full,1,gemma4:12b,True,1,False,,
+sizes,redirect-login,full,1,gemma4:12b,True,1,False,,
+sizes,fmt-greet,full,1,gemma4:12b,False,1,False,,
+sizes,fmt-greet,full,1,gemma4:12b,False,2,False,,
+sizes,fmt-greet,full,1,gemma4:12b,False,3,False,,
+sizes,pt-docs,full,2,gemma4:12b,True,1,False,,
+sizes,sqli-notes,full,2,gemma4:12b,True,1,False,,
+sizes,sqli-notes,full,2,gemma4:12b,True,2,False,,
+sizes,redos-slug,full,2,gemma4:12b,True,1,False,,
+sizes,redos-email,full,2,gemma4:12b,True,1,False,,
+sizes,cmdi-archive,full,2,gemma4:12b,True,1,False,,
+sizes,cmdi-archive,full,2,gemma4:12b,True,2,False,,
+sizes,ssrf-asset,full,2,gemma4:12b,True,1,False,,
+sizes,redirect-login,full,2,gemma4:12b,True,1,False,,
+sizes,redirect-logout,full,2,gemma4:12b,True,1,False,,
+sizes,fmt-greet,full,2,gemma4:12b,False,1,False,,
+sizes,fmt-greet,full,2,gemma4:12b,False,2,False,,
+sizes,fmt-greet,full,2,gemma4:12b,False,4,False,,
+sizes,cmdi-archive,full,1,gemma4:31b,True,1,True,True,ok
+sizes,cmdi-archive,full,1,gemma4:31b,True,2,False,,
+sizes,ssrf-preview,full,1,gemma4:31b,True,1,True,True,ok
+sizes,redirect-login,full,1,gemma4:31b,True,1,True,True,ok
+sizes,redirect-login,full,1,gemma4:31b,True,2,True,True,ok
+sizes,redirect-logout,full,1,gemma4:31b,True,1,True,True,ok
+sizes,redos-email,full,2,gemma4:31b,True,1,True,True,ok
+sizes,cmdi-archive,full,2,gemma4:31b,True,1,True,True,ok
+sizes,ssrf-preview,full,2,gemma4:31b,True,1,True,True,ok
+sizes,redirect-login,full,2,gemma4:31b,True,1,True,True,ok
+sizes,redirect-logout,full,2,gemma4:31b,True,1,True,True,ok
+sizes,fmt-greet,full,2,gemma4:31b,False,2,True,False,"test_aegis_harness::test_attack_is_neutralised[original]: AssertionError: unsafe response (HTTP 500): server_error
+assert False; test_aegis_harness::test_attack_is_neutralised[visible-1]: AssertionErr"

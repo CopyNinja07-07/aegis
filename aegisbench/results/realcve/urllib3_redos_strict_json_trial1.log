@@ -1,0 +1,1 @@
+trial 1: verified=False cands=4 context=['urllib3/connection.py', 'urllib3/util/url.py', 'urllib3/exceptions.py'] (5.0%) exploit 2.676 s
