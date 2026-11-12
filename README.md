@@ -70,7 +70,7 @@ The GPU runs used two NVIDIA T4 GPUs; `aegisbench/kaggle/make_kernel.py` builds 
 ```bibtex
 @misc{kumar2026oodaaegis,
   title  = {OODA-Aegis: Exploit-Grounded, Constraint-Verified Program Repair with Code-Graph Retrieval and SMT Guardrails},
-  author = {Kumar, Nikhil and Singh, Suryansh Pratap and Jha, Raj},
+  author = {Kumar, Nikhil and Singh, Suryansh Pratap},
   year   = {2026},
   url    = {https://github.com/CopyNinja07-07/aegis}
 }
@@ -78,7 +78,7 @@ The GPU runs used two NVIDIA T4 GPUs; `aegisbench/kaggle/make_kernel.py` builds 
 
 ## Authors
 
-Nikhil Kumar (lead author), Suryansh Pratap Singh and Raj Jha.
+Nikhil Kumar (lead author) and Suryansh Pratap Singh.
 
 ## Safety note
 

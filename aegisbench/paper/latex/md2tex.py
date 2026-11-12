@@ -92,7 +92,7 @@ def main() -> None:
     head, rest = title.split(": ", 1)
     out = [PREAMBLE,
            r"\title{\textbf{" + esc(head) + r":\\" + esc(rest) + r"}\\[0.6ex]\large " + esc(subtitle) + "}",
-           r"\author{Nikhil Kumar (lead author) \and Suryansh Pratap Singh \and Raj Jha}",
+           r"\author{Nikhil Kumar (lead author) \and Suryansh Pratap Singh}",
            r"\date{\small Code, benchmark, raw logs and notebooks: \url{https://github.com/CopyNinja07-07/aegis}}",
            r"\begin{document}", r"\maketitle"]
     i = body_start

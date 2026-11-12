@@ -2,7 +2,7 @@
 
 ### A Gemma 4 agent that finds exploited code through the call graph, proves its actions safe with Z3, and verifies every fix.
 
-**Authors:** Nikhil Kumar (lead author), Suryansh Pratap Singh, Raj Jha
+**Authors:** Nikhil Kumar (lead author), Suryansh Pratap Singh
 
 **Code, benchmark, raw logs and notebooks:** [github.com/CopyNinja07-07/aegis](https://github.com/CopyNinja07-07/aegis)
 
